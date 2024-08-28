@@ -1,0 +1,9 @@
+<?php
+    session_start();
+    if(isset($_SESSION['adm_login'])&&$_SESSION['adm_login']==1){
+        header("location:dashboard.php");
+    }
+    else{
+        header("location:login.php");
+    }
+?>
